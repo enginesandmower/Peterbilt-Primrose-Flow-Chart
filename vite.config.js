@@ -8,5 +8,8 @@ export default defineConfig({
     port: 4173, 
     host: true,
     allowedHosts: ['peterbilt-primrose-flow-chart.onrender.com']
+  },
+  build: {
+    chunkSizeWarningLimit: 1000 // Set to 1000kb, or whatever you prefer
   }
 });
