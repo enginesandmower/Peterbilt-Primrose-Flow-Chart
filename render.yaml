@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: primrose-flow-chart
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview -- --host 0.0.0.0
+    plan: free
+    envVars:
+      - key: VITE_APP_PASSWORD
+        value: Primrose2025
+    autoDeploy: true
